@@ -1,0 +1,99 @@
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block !important;
+  }
+  .title-wrapper {
+    flex-direction: column;
+  }
+  .title-wrapper .title-text-wrapper {
+    text-align: center;
+  }
+  .title-wrapper .title-text-wrapper .button-wrapper {
+    flex-direction: column;
+  }
+  .title-wrapper .title-text-wrapper .button-wrapper .download-button {
+    margin-bottom: 35px !important;
+  }
+  .title-wrapper .title-text-wrapper .button-wrapper .download-button::after {
+    padding: 16px !important;
+  }
+  .work-section-wrapper {
+    margin-left: 17px !important;
+    margin-right: 0 !important;
+  }
+  .work-section-wrapper .subtitle {
+    width: 100% !important;
+  }
+  .work-section-wrapper .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-section-wrapper .cards-wrapper .card {
+    margin-bottom: 50px;
+  }
+  .advantages-wrapper .advantages-content-wrapper {
+    margin: 30px !important;
+    flex-direction: column;
+  }
+  .prices-wrapper {
+    margin: 0 !important;
+  }
+  .prices-wrapper .prices-cars-wrapper {
+    flex-direction: column;
+  }
+  .prices-wrapper .prices-cars-wrapper .prices-card {
+    margin: 0 0 20px 0 !important;
+  }
+  .scooters-wrapper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .scooters-wrapper .scooter-tiles-right p {
+    display: none;
+  }
+  .app-content-wrapper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    flex-direction: column-reverse;
+  }
+  .app-content-wrapper .app-text-wrapper {
+    margin-top: 50px;
+  }
+  .goals-wrapper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .goals-wrapper .img1,
+  .goals-wrapper .img2,
+  .goals-wrapper .img3 {
+    display: none;
+  }
+  .goals-wrapper .img0 {
+    margin-top: 20px;
+    display: block;
+    width: 325px;
+    height: 271px;
+    position: relative !important;
+  }
+  .goals-wrapper .text-wrapper {
+    margin: 20px !important;
+    width: 100%;
+  }
+  .questions-wrapper {
+    margin-top: 112px !important;
+  }
+  .questions {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .footer-info-wrapper,
+  .license {
+    flex-direction: column;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+}/*# sourceMappingURL=responsive.css.map */

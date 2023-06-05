@@ -1,0 +1,616 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Montserrat:wght@300;400;700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F6F7;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #261447;
+}
+
+.pink {
+  color: #FF3964;
+}
+
+.title-color {
+  color: #261447;
+}
+
+.download-button {
+  color: white;
+  cursor: pointer;
+  background-color: #FF3964;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+.green-button {
+  background-color: #66F6B1;
+  color: #261447;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 95%;
+  margin: 0;
+  background-color: white;
+  padding: 16px 48px;
+  z-index: 4;
+}
+
+h2.dotted-after {
+  position: relative;
+}
+
+.inner-text {
+  display: none;
+}
+
+.img0 {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none !important;
+  color: #FF3964;
+  width: 32px;
+  height: 4px;
+  cursor: pointer;
+}
+
+h2.dotted-after::after {
+  content: "";
+  border-bottom: dashed 5px #66F6B1;
+  width: 8%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 48px;
+  font-family: "Montserrat", sans-serif;
+}
+header h1 {
+  color: #FF3964;
+}
+header nav a {
+  text-decoration: none;
+  color: #555A7A;
+  margin: 0 20px;
+  font-size: 15px;
+}
+
+main {
+  font-family: "Manrope", sans-serif;
+  margin-top: 70px;
+}
+main .title-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-left: 322px;
+  margin-right: 322px;
+}
+main .title-wrapper .title-text-wrapper {
+  width: 450px;
+  margin-right: 100px;
+  color: #261447;
+}
+main .title-wrapper .title-text-wrapper h1 {
+  font-size: 95px;
+  z-index: 1;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: -2.38px;
+}
+main .title-wrapper .title-text-wrapper h1::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 65%;
+  z-index: -1;
+}
+main .title-wrapper .title-text-wrapper h1.title-color::after {
+  border-bottom: solid 20px #66F6B1;
+}
+main .title-wrapper .title-text-wrapper h1.pink::after {
+  border-bottom: solid 20px #E7EBEE;
+}
+main .title-wrapper .title-text-wrapper .pink {
+  margin-bottom: 50px;
+}
+main .title-wrapper .title-text-wrapper p {
+  font-size: 16px;
+  line-height: 30px;
+}
+main .title-wrapper .title-text-wrapper .button-wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+main .title-wrapper .title-text-wrapper .button-wrapper .download-button {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  position: relative;
+}
+main .title-wrapper .title-text-wrapper .button-wrapper .download-button::after {
+  font-family: fontAwesome;
+  content: "\f0ab";
+  margin-left: 15px;
+  font-size: 16px;
+  background-color: #E22A53;
+  position: absolute;
+  padding: 17px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  left: 90%;
+}
+main .title-wrapper .title-text-wrapper .button-wrapper .learn-more-button {
+  background-color: transparent;
+  border: 2px solid #261447;
+  border-radius: 6px;
+  padding: 15px 35px;
+}
+main .title-wrapper .title-image-wrapper img {
+  width: 622px;
+  height: 830px;
+}
+main .work-section-wrapper {
+  margin-left: 322px;
+  margin-right: 322px;
+}
+main .work-section-wrapper h2 {
+  font-size: 35px;
+  position: relative;
+}
+main .work-section-wrapper h2::after {
+  content: "";
+  border-bottom: dashed 5px #66F6B1;
+  width: 10%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+main .work-section-wrapper p.subtitle {
+  margin: 0;
+  margin-top: 30px;
+  color: #555A7A;
+  font-size: 16px;
+  width: 40%;
+}
+main .work-section-wrapper .cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+main .work-section-wrapper .cards-wrapper .card {
+  text-align: center;
+  background-color: white;
+  width: 280px;
+  border-radius: 16px;
+  padding: 64px 32px 53px 32px;
+  position: relative;
+}
+main .work-section-wrapper .cards-wrapper .card .number-wrapper {
+  position: absolute;
+  background-color: #66F6B1;
+  width: 64px;
+  height: 64px;
+  left: 81%;
+  top: 0%;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  display: table;
+}
+main .work-section-wrapper .cards-wrapper .card .number-wrapper span {
+  font-weight: bold;
+  font-size: 24px;
+  color: #261447;
+  height: 64px;
+  display: table-cell;
+  vertical-align: middle;
+}
+main .work-section-wrapper .cards-wrapper .card h3 {
+  margin-top: 32px;
+}
+main .work-section-wrapper .cards-wrapper .card p {
+  margin-top: 16px;
+  color: rgba(85, 90, 122, 0.7215686275);
+  font-size: 14px;
+}
+main .advantages-wrapper {
+  background-color: #261447;
+  margin-top: 176px;
+}
+main .advantages-wrapper .advantages-content-wrapper {
+  margin: 51px 322px 34px 322px;
+  display: flex;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text {
+  color: white;
+  width: 674px;
+  height: 664px;
+  margin-top: 122px;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text span {
+  font-size: 14px;
+  color: #979DBF;
+  letter-spacing: 4.2px;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text h2 {
+  color: white !important;
+  font-size: 48px;
+  position: relative;
+  font-family: "Manrope", sans-serif !important;
+  font-weight: bold;
+  width: 500px;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text h2::after {
+  content: "";
+  border-bottom: dashed 5px #66F6B1;
+  width: 20%;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text .advantages-info {
+  width: 270px;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text .advantages-info .info-item:nth-child(1) {
+  margin-top: 77px;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text .advantages-info .info-item {
+  margin-bottom: 32px;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text .advantages-info .info-item h3 {
+  color: white !important;
+  font-size: 26px;
+  font-family: "Manrope", sans-serif !important;
+  font-weight: bold;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text .advantages-info .info-item p {
+  color: #979DBF;
+  font-size: 14px;
+  margin: 0;
+}
+main .advantages-wrapper .advantages-content-wrapper .advantages-text .advantages-info .download-button {
+  margin-left: 0;
+  margin-top: 24px;
+}
+main .advantages-wrapper .advantages-image {
+  margin-top: 51px;
+  position: relative;
+}
+main .advantages-wrapper .advantages-image .scooter {
+  position: relative;
+  z-index: 3;
+}
+main .advantages-wrapper .advantages-image .blob {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+}
+main .prices-wrapper {
+  margin: 0 322px;
+}
+main .prices-wrapper h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 112px;
+}
+main .prices-wrapper .prices-cars-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 67px;
+}
+main .prices-wrapper .prices-cars-wrapper .prices-card {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.0509803922);
+  border-radius: 20px;
+  flex-grow: 1;
+  margin-right: 32px;
+}
+main .prices-wrapper .prices-cars-wrapper .prices-card span {
+  color: #82869E;
+  letter-spacing: 4.2px;
+  font-size: 14px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+main .prices-wrapper .prices-cars-wrapper .prices-card p {
+  font-size: 102px;
+  color: #261447;
+  margin: 0;
+  font-weight: bold;
+  margin-left: 50px;
+}
+main .prices-wrapper .prices-cars-wrapper .prices-card:nth-child(1) {
+  margin-right: 16px;
+}
+main .prices-wrapper .prices-cars-wrapper .prices-card:nth-child(1) {
+  margin-left: 16px;
+}
+main .scooters-wrapper {
+  margin-top: 112px;
+  text-align: center;
+  margin: 112px 322px 0 322px;
+  position: relative;
+}
+main .scooters-wrapper .subtitle {
+  font-size: 14px;
+  color: #82869E;
+  letter-spacing: 4.2px;
+}
+main .scooters-wrapper h2 {
+  text-align: center;
+  font-size: 48px;
+}
+main .scooters-wrapper .image-wrapper {
+  margin-top: 105px;
+}
+main .scooters-wrapper .tile {
+  background-color: white;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  text-align: right;
+  color: #555A7A;
+  border-radius: 12px;
+  padding: 12px;
+  width: 300px;
+  height: 40px;
+  display: table;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+main .scooters-wrapper .tile span {
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+main .scooters-wrapper .tile i {
+  height: 16px;
+  width: 16px;
+  color: #FF3864;
+  margin-right: 16px;
+}
+main .scooters-wrapper .scooter-tiles-left {
+  position: absolute;
+  top: 30%;
+}
+main .scooters-wrapper .scooter-tiles-right {
+  position: absolute;
+  left: 67%;
+  top: 25%;
+}
+main .scooters-wrapper .scooter-tiles-right p {
+  font-size: 21px;
+  color: #555A7A;
+  text-align: left;
+  margin-bottom: 73px;
+}
+main .scooters-wrapper .scooter-tiles-right .tile {
+  text-align: left;
+  justify-content: flex-start;
+}
+main .scooters-wrapper .scooter-tiles-right .tile i {
+  margin-left: 16px;
+}
+main .app-wrapper {
+  margin-top: 112px;
+  background-color: #261447;
+}
+main .app-wrapper .app-content-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 277px;
+  margin-right: 429px;
+}
+main .app-wrapper .app-content-wrapper .app-text-wrapper {
+  margin-left: 50px;
+}
+main .app-wrapper .app-content-wrapper .app-text-wrapper span {
+  color: #979DBF;
+}
+main .app-wrapper .app-content-wrapper .app-text-wrapper h2 {
+  color: white !important;
+  font-size: 48px;
+  position: relative;
+  font-family: "Manrope", sans-serif !important;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+main .app-wrapper .app-content-wrapper .app-text-wrapper h2::after {
+  content: "";
+  border-bottom: dashed 5px #66F6B1;
+  width: 40%;
+  position: absolute;
+  left: 20%;
+  top: 100%;
+}
+main .app-wrapper .app-content-wrapper .app-text-wrapper .main-p {
+  color: #F3F4F6;
+  font-size: 16px;
+  margin-top: 60px;
+  line-height: 30px;
+}
+main .app-wrapper .app-content-wrapper .app-text-wrapper .sub-p {
+  color: #979DBF;
+  font-size: 12px;
+  line-height: 20px;
+}
+main .app-wrapper .app-content-wrapper .app-text-wrapper .download-button {
+  margin-left: 0;
+  margin-top: 48px;
+}
+main .goals-wrapper {
+  margin: 112px 322px 0 322px;
+  position: relative;
+}
+main .goals-wrapper span {
+  color: #82869E;
+  font-size: 14px;
+}
+main .goals-wrapper h2 {
+  font-size: 48px;
+  width: 650px;
+}
+main .goals-wrapper h2 {
+  font-size: 48px;
+  width: 650px;
+  padding-bottom: 15px;
+}
+main .goals-wrapper h2::after {
+  content: "";
+  border-bottom: dashed 5px #66F6B1;
+  width: 20%;
+  position: absolute;
+  left: 10%;
+  top: 100%;
+}
+main .goals-wrapper .text-wrapper {
+  width: 400px;
+  margin: 156px auto;
+}
+main .goals-wrapper .text-wrapper p {
+  color: #555A7A;
+}
+main .goals-wrapper img {
+  position: absolute;
+}
+main .goals-wrapper .img1 {
+  left: 6%;
+  top: 80%;
+}
+main .goals-wrapper .img2 {
+  left: 70%;
+  top: 20%;
+}
+main .goals-wrapper .img3 {
+  top: 70%;
+  left: 90%;
+}
+main .questions-wrapper {
+  margin-top: 600px;
+}
+main .questions-wrapper h2 {
+  text-align: center;
+  font-size: 48px;
+  padding-bottom: 15px;
+}
+main .questions-wrapper .desc {
+  text-align: center;
+  color: #555A7A;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+main .questions-wrapper .questions {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 33%;
+  width: 600px;
+  margin-top: 50px;
+}
+main .questions-wrapper .questions .question {
+  border-top: 1px solid #D6D6D6;
+  cursor: pointer;
+}
+main .questions-wrapper .questions .question article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .questions-wrapper .questions .question article p {
+  font-size: 16px;
+  color: #555A7A;
+  font-weight: bold;
+}
+main .questions-wrapper .questions .question article i {
+  color: #66F6B1;
+  width: 24px;
+  height: 13px;
+}
+main .questions-wrapper .questions .question:last-child {
+  border-bottom: 1px solid #D6D6D6;
+}
+main .questions-wrapper .after-p {
+  font-size: 12px;
+  color: #555A7A;
+  text-align: center;
+}
+main .questions-wrapper .btn-wrapper {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 112px;
+}
+
+footer {
+  font-family: "Manrope", sans-serif;
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+footer .footer-info-wrapper {
+  margin: 0 322px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-info-wrapper .logos p {
+  color: #FF3964;
+  font-size: 60px;
+  margin: 0;
+  font-weight: bold;
+}
+footer .footer-info-wrapper .logos .medias span {
+  color: #555A7A;
+  font-size: 12px;
+}
+footer .footer-info-wrapper .moto .moto-text {
+  color: #555A7A;
+  font-size: 24px;
+  margin: 0;
+}
+footer .footer-info-wrapper .moto .company {
+  color: #555A7A;
+  font-size: 12px;
+}
+footer .license {
+  margin: 0 322px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #D6DCE9;
+  margin-top: 50px;
+}
+footer .license span {
+  font-size: 16px;
+  color: #555A7A;
+  padding-top: 15px;
+}/*# sourceMappingURL=index.css.map */
